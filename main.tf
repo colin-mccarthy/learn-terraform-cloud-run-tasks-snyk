@@ -2,12 +2,7 @@ provider "aws" {
   region = var.aws_region
 }
 
-  default_tags {
-    tags = {
-      hashicorp-learn = "cloud-run-tasks-snyk"
-    }
-  }
-}
+
 
 resource "aws_security_group" "allow_ssh" {
   name        = "allow_ssh"
